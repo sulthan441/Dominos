@@ -150,7 +150,13 @@ import {
 
             {/* <input type={"text"} onChange={eOTP} maxLength='4' value={enterOTP} placeholder='enter otp' /> <button onClick={compare} >submit</button>  */}
             <HStack>
-
+                <PinInput  placeholder='_'  >
+                    <PinInputField onChange={(e) => setEOTP( eOTP + e.target.value) } />
+                    <PinInputField onChange={(e) => setEOTP( eOTP + e.target.value) } />
+                    <PinInputField onChange={(e) => setEOTP( eOTP + e.target.value) } />
+                    <PinInputField onChange={(e) => setEOTP( eOTP + e.target.value) } />
+                    <button id="verifyBtn"  onClick={compare} >Verify</button>
+                </PinInput>
             </HStack> 
 
             </div>
